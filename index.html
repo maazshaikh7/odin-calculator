@@ -8,10 +8,10 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div id="container" class="grid h-screen place-items-center bg-black">
+    <div id="container" class="grid h-[95vh] place-items-center bg-black">
       <div
         id="calculator"
-        class="flex flex-col gap-3 p-3 border-orange-600 border-4 min-h-[70vh] xl:w-[25vw] rounded-xl shadow-2xl shadow-orange-500"
+        class="flex flex-col gap-3 p-3 m-3 border-orange-600 border-4 min-h-[70vh] lg:h-[60vh] rounded-xl shadow-2xl shadow-orange-500"
       >
         <div class="flex justify-center">
           <div
@@ -22,15 +22,14 @@
             <div
               id="bottom"
               class="flex justify-end text-4xl py-3 pt-1 px-2 h-11"
-            >
-            </div>
+            ></div>
           </div>
         </div>
         <div id="buttons" class="grid grid-cols-4 grid-rows-4">
           <button class="operator" id="exponent">^</button>
           <button class="sign" id="sign">+/-</button>
           <button class="root" id="squareRoot">√</button>
-          <button class="clear bg-red-500 text-white" id="clear">C</button>
+          <button class="clear" id="clear">C</button>
           <button class="digit" id="seven">7</button>
           <button class="digit" id="eight">8</button>
           <button class="digit" id="nine">9</button>
@@ -45,10 +44,13 @@
           <button class="operator" id="subtract">-</button>
           <button class="digit" id="zero">0</button>
           <button class="decimal" id="decimal">.</button>
-          <button class="compute bg-orange-700 text-white" id="equal">=</button>
+          <button class="compute" id="equal">=</button>
           <button class="operator" id="add">+</button>
         </div>
       </div>
     </div>
+    <footer class="grid place-items-center h-12 bg-black">
+      <a class="text-xl text-orange-600" href="https://github.com/maazshaikh7">	&#169; @maazshaikh7</a>
+    </footer>
   </body>
 </html>

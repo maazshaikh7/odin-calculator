@@ -14,15 +14,23 @@ button {
   color: darkgray;
 }
 button:hover {
-  filter: brightness(0.8);
+    filter: contrast(5);
   cursor: pointer;
 }
 
 button:active {
-  filter: brightness(0.6);
+  filter: invert();
 }
 .operator:not(#exponent) {
   background-color: rgb(218, 162, 59);
   border: 2px solid rgb(192, 147, 62);
   color: black;
+}
+.clear{
+    background-color: rgb(213, 27, 27);
+    color: white;
+}
+#equal{
+    background-color: orangered;
+    color: white;
 }
