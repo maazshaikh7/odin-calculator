@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+  border: 1px solid orangered;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  font-weight: 500;
+  border-radius: 3px;
+  transition: filter 200ms;
+  font-size: 20px;
+  color: darkgray;
+}
+button:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+button:active {
+  filter: brightness(0.6);
+}
+.operator:not(#exponent) {
+  background-color: rgb(218, 162, 59);
+  border: 2px solid rgb(192, 147, 62);
+  color: black;
+}

@@ -6,36 +6,47 @@
     <link href="/style.css" rel="stylesheet" />
     <title>Odin-Calculator</title>
     <script src="script.js" defer></script>
-
   </head>
   <body>
-    <div class="grid h-screen place-items-center bg-black">
-      <div class="calc-body border-orange-600 border-4 h-[70vh] xl:w-[25vw] rounded-xl">
-        <div class="calc-display"></div>
-        <div id="buttons">
-            <button class="digit" id="zero">0</button>
-            <button class="decimal" id="decimal">.</button>
-            <button class="compute" id="equal">=</button>
-            <button class="digit" id="one">1</button>
-            <button class="digit" id="two">2</button>
-            <button class="digit" id="three">3</button>
-            <button class="digit" id="four">4</button>
-            <button class="digit" id="five">5</button>
-            <button class="digit" id="six">6</button>
-            <button class="digit" id="seven">7</button>
-            <button class="digit" id="eight">8</button>
-            <button class="digit" id="nine">9</button>
-
-            <button class="operator" id="exponent">^</button>
-            <button class="sign" id="sign">+/-</button>
-
-            <button class="root" id="squareRoot">√</button>
-            <button class="clear" id="clear">C</button>
-
-            <button class="operator" id="divide">÷</button>
-            <button class="operator" id="multiply">×</button>
-            <button class="operator" id="subtract">-</button>
-            <button class="operator" id="add">+</button>
+    <div id="container" class="grid h-screen place-items-center bg-black">
+      <div
+        id="calculator"
+        class="flex flex-col gap-3 p-3 border-orange-600 border-4 min-h-[70vh] xl:w-[25vw] rounded-xl shadow-2xl shadow-orange-500"
+      >
+        <div class="flex justify-center">
+          <div
+            id="display"
+            class="bg-amber-200 w-full h-28 rounded-xl py-auto px-4 font-bold"
+          >
+            <div id="top" class="flex justify-end text-lg py-3 px-2 h-11"></div>
+            <div
+              id="bottom"
+              class="flex justify-end text-4xl py-3 pt-1 px-2 h-11"
+            >
+            </div>
+          </div>
+        </div>
+        <div id="buttons" class="grid grid-cols-4 grid-rows-4">
+          <button class="operator" id="exponent">^</button>
+          <button class="sign" id="sign">+/-</button>
+          <button class="root" id="squareRoot">√</button>
+          <button class="clear bg-red-500 text-white" id="clear">C</button>
+          <button class="digit" id="seven">7</button>
+          <button class="digit" id="eight">8</button>
+          <button class="digit" id="nine">9</button>
+          <button class="operator" id="divide">÷</button>
+          <button class="digit" id="four">4</button>
+          <button class="digit" id="five">5</button>
+          <button class="digit" id="six">6</button>
+          <button class="operator" id="multiply">×</button>
+          <button class="digit" id="one">1</button>
+          <button class="digit" id="two">2</button>
+          <button class="digit" id="three">3</button>
+          <button class="operator" id="subtract">-</button>
+          <button class="digit" id="zero">0</button>
+          <button class="decimal" id="decimal">.</button>
+          <button class="compute bg-orange-700 text-white" id="equal">=</button>
+          <button class="operator" id="add">+</button>
         </div>
       </div>
     </div>
